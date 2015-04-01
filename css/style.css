@@ -1,0 +1,32 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #EEE;
+	padding: 1em 0;
+}
+
+.container {
+	width: 960px;
+	margin: auto;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table-head {
+	font-weight: bold;
+	text-align: center;
+	background-color: #AAA;
+}
+
+td {
+	border: 1px solid #000;
+	padding: 0.8em 0.3em;
+}
+
+input {
+	margin-top: 10px;
+	padding: 0.5em 1em;
+	cursor: pointer;
+}
