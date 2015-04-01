@@ -29,6 +29,6 @@ function calcularImc() {
 	}
 }
 
-var btn_calcular = document.getElementsByClassName('calcular')[0];
+var btn_calcular = document.getElementById('calcular-imc');
 
 btn_calcular.addEventListener('click', calcularImc);
