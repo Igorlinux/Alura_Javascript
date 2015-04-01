@@ -32,3 +32,8 @@ function calcularImc() {
 var btn_calcular = document.getElementById('calcular-imc');
 
 btn_calcular.addEventListener('click', calcularImc);
+
+
+var inptNome = document.getElementById('campo-nome').value;
+var inptPeso = document.getElementById('campo-peso').value;
+var inptAltura = document.getElementById('campo-altura').value
