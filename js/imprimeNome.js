@@ -17,8 +17,6 @@ for (var contador = 0; contador < trsPaciente.length; contador++) {
 			var imc = this.peso / (this.altura * this.altura);
 			return imc;
 		}
-	}
-
-	tdImc.textContent = paciente.pegaImc();
-	console.log(paciente.pegaImc());
+	}	
+	console.log(paciente.nome);
 }
