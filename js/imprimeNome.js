@@ -7,14 +7,7 @@ percorreArray(trsPaciente, function(pacienteTr) {
 	var tdAltura = pacienteTr.getElementsByClassName('info-altura')[0];
 	var tdImc = pacienteTr.getElementsByClassName('info-imc')[0];
 	
-	var paciente = {
-		nome : tdNome.textContent,
-		peso : tdPeso.textContent,
-		altura : tdAltura.textContent,
-		pegaImc : function() {
-			var imc = this.peso / (this.altura * this.altura);
-			return imc;
-		}
-	}
+	var paciente = new Paciente(tdNome, tdPeso, tdAltura, tdImc);
+
 	console.log(paciente.nome);
 });
