@@ -1,14 +1,12 @@
 var trsPaciente = document.getElementsByClassName('paciente');
 
-for (var contador = 0; contador < trsPaciente.length; contador++) {
-
-	var pacienteTr = trsPaciente[contador];
+percorreArray(trsPaciente, function(pacienteTr) {
 
 	var tdNome = pacienteTr.getElementsByClassName('info-nome')[0];
 	var tdPeso = pacienteTr.getElementsByClassName('info-peso')[0];
 	var tdAltura = pacienteTr.getElementsByClassName('info-altura')[0];
 	var tdImc = pacienteTr.getElementsByClassName('info-imc')[0];
-
+	
 	var paciente = {
 		nome : tdNome.textContent,
 		peso : tdPeso.textContent,
@@ -18,7 +16,7 @@ for (var contador = 0; contador < trsPaciente.length; contador++) {
 			return imc;
 		}
 	}
-
 	tdImc.textContent = paciente.pegaImc();
 	console.log(paciente.pegaImc());
-}
+
+});
