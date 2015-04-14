@@ -16,7 +16,7 @@ btn_calcular.addEventListener('click', function() {
 			peso : tdPeso.textContent,
 			altura : tdAltura.textContent,
 			pegarImc : function() {
-				var imc = this.peso / (this.altura * this.altura);
+				var imc = (this.peso / (this.altura * this.altura)).toFixed(2);
 				return imc;
 			}
 		}
@@ -24,5 +24,5 @@ btn_calcular.addEventListener('click', function() {
 		tdImc.textContent = paciente.pegarImc();
 		console.log(paciente.pegarImc());
 	});
-	
+
 });
