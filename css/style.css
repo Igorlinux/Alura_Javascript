@@ -2,7 +2,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #EEE;
 	padding: 1em 0;
-	font-size: 0.9em;
+	font-size: 0.83em;
 }
 
 .container {
@@ -19,6 +19,7 @@ td {
 	border: 1px solid #000;
 	padding: 0.8em 0.3em;
 	background-color: #FFF;
+	width: 240px;
 }
 
 .table-head td {

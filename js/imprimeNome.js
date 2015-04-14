@@ -7,7 +7,15 @@ percorreArray(trsPaciente, function(pacienteTr) {
 	var tdAltura = pacienteTr.getElementsByClassName('info-altura')[0];
 	var tdImc = pacienteTr.getElementsByClassName('info-imc')[0];
 	
-	var paciente = new Paciente(tdNome, tdPeso, tdAltura, tdImc);
+	var paciente = {
+		nome : tdNome.textContent,
+		peso : tdPeso.textContent,
+		altura : tdAltura.textContent,
+		pegarImc : function() {
+			var imc = this.peso / (this.altura * this.altura);
+			return imc;
+		}
+	}
 
 	console.log(paciente.nome);
 });
